@@ -1,16 +1,14 @@
-import Card from "../components/Card";
-import Modal from "../components/Modal";
-import Navbar from "../components/Navbar";
-import Profile from "../components/Profile";
-
+import LandingFooter from '../components/LandingFooter';
+import LandingHero from '../components/LandingHero';
+import LandingLayout from '../components/LandingLayout';
 const Home = () => {
   return (
-    <div className="w-full h-full p-8">
-      <Navbar />
-      <Card />
-      <Modal />
-      <Profile />
-    </div>
+    <>
+      <LandingLayout>
+        <LandingHero />
+        <LandingFooter />
+      </LandingLayout>
+    </>
   );
 };
 
